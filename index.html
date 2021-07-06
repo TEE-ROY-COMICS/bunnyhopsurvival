@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+		<title>BunnyHopSurvival</title>
+
+		<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+		<link rel="stylesheet" href="bhsstyle.css">
+		<script src="bhsjava.js" defer></script>
+	</head>
+	<body>
+		<div class="elements">
+			<p id="anleitung">Press SPACE to Jump. R to Start/Restart. M to toggle Music.</p>
+
+			<div id="hauptteil">
+				<div id="topElemente">
+					<div id="hp-anzeige">
+						<div id="hp1"></div>
+						<div id="hp2"></div>
+					</div>
+					<p id="currentScore">0.00s</p>
+				</div>
+
+				<div id="game">
+					<div id="character"></div>
+					<div id="block"></div>
+					<div id="wolke1"></div>
+					<div id="wolke2"></div>
+				</div>
+				
+				<div id="allButtons">
+					<button id="start-button">Start</button>
+					<button id="restart-button" class="hidden">Restart</button>
+					<audio id="myAudio" src="audios/Track9.mp3" preload="auto"></audio>
+					<button onClick="togglePlay()">Music
+					</button>
+				</div>
+			</div>
+
+			<div id="audios">
+				<audio id="playSound" src="audios/navigate.mp3" preload="auto"></audio>
+
+				<audio id="deathSound" src="audios/pickup2.mp3" preload="auto"></audio>
+
+				<audio id="jumpSound" src="audios/jump.mp3" preload="auto"></audio>
+
+				<audio id="hitSound" src="audios/hit.mp3" preload="auto"></audio>
+			</div>
+		</div>
+		<div id="end" class="hidden">
+			<div class="modal">
+				<p>Game Over</p>
+				<p><span id="score">0</span></p>
+				<p><span id="bestscore">0</span></p>
+			</div>
+		</div>
+	</body>
+</html>
