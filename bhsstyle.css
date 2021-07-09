@@ -189,7 +189,7 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 
-	background-image: url("images/gameoverM.png");
+	background-image: url("images/gameoverm.png");
 	background-size: 100%;
 	width: calc(var(--unit) * 23);
 	height: calc(var(--unit) * 10);
