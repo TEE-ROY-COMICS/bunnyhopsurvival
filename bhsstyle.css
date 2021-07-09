@@ -12,7 +12,7 @@
 }
 
 html {
-	background-image: url("images/ScreenM.png");
+	background-image: url("images/screenm.png");
 	background-size: 1280px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -83,7 +83,7 @@ html {
 	border-bottom:  0.15rem solid #42804F;
 	position: relative;
 	overflow: hidden;
-	background-image: url("images/Sky.png");
+	background-image: url("images/sky.png");
 	background-size: 100%;
 }
 
@@ -164,7 +164,7 @@ button:hover {
 	left: calc(var(--unit) * 50);
 	top: calc(var(--unit) * 0.5);
 	position: absolute;
-	background-image: url("images/Wolke.png");
+	background-image: url("images/wolke.png");
 	background-size: 100%;
 	image-rendering: crisp-edges;
 	animation: wolke1 6s infinite linear;
@@ -189,7 +189,7 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 
-	background-image: url("images/GameoverM.png");
+	background-image: url("images/gameoverM.png");
 	background-size: 100%;
 	width: calc(var(--unit) * 23);
 	height: calc(var(--unit) * 10);
@@ -209,11 +209,6 @@ button:hover {
 @media (max-width: 55em) {
 	:root {
 		--unit: 3vw;
-	}
-	
-	html {
-		background-image: url("images/X.png");
-		background-color: #3F8BFF;
 	}
 
 	.elements {
